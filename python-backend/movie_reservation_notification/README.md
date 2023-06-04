@@ -1,12 +1,12 @@
 ## 배운점
-- telegram의 구버전과 신버전이 바껴서 에러발생    
+- telegram의 구버전과 신버전이 바껴서 에러발생
 => pip install --upgrade python-telegram-bot==13.14
-- apscheduler 최신으로 업그레이드 필요   
+- apscheduler 최신으로 업그레이드 필요
 => pip install --upgrade apscheduler
-- ec2 ubuntu에 백그라운드로 selenium을 돌리기 위해선 
-  > chrome은 안됨, firefox 사용할것   
-  > headless option 넣기   
-  > 예외 처리할것 => try문에 전체 크롤링 코드 넣어야함  
+- ec2 ubuntu에 백그라운드로 selenium을 돌리기 위해선
+  > chrome은 안됨, firefox 사용할것
+  > headless option 넣기
+  > 예외 처리할것 => try문에 전체 크롤링 코드 넣어야함
   > 마지막에 driver.quit 처리하기
 - frame 변환에서 변환 후에 click하면 변환상태 유지됨 (다시 원상태로 돌리는게 나음)
 - 처음에 get 쓸때 날짜 주의할것 (예전 날짜 계속쓰면 element를 못찾음)

@@ -7,8 +7,8 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 from selenium.webdriver.firefox.options import Options
 from bs4 import BeautifulSoup
 
-def get_gmail():    
-    try:        
+def get_gmail():
+    try:
         options = Options()
         options.add_argument("--headless")
         driver = webdriver.Firefox(options=options)
@@ -25,7 +25,7 @@ def get_gmail():
             if day.find_element(By.TAG_NAME, 'span').text == "06월" and day.find_element(By.TAG_NAME, 'strong').text == "03":
                 day.click()
                 break
-        movie_imax_lst = driver.find_elements(By.XPATH, '/html/body/div/div[3]/ul/li[descendant::*[@class="imax"]]/div/div[1]/a/strong') 
+        movie_imax_lst = driver.find_elements(By.XPATH, '/html/body/div/div[3]/ul/li[descendant::*[@class="imax"]]/div/div[1]/a/strong')
 
         if movie_imax_lst:
             bot.sendMessage(chat_id=6137914993, text=' '.join(map(lambda x: x.text, movie_imax_lst)) + ' IMAX 예매가 열렸습니다.')

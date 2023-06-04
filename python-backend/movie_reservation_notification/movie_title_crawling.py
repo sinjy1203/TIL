@@ -6,8 +6,8 @@ import telegram
 from apscheduler.schedulers.blocking import BlockingScheduler
 from selenium.webdriver.firefox.options import Options
 
-def get_gmail():    
-    try:        
+def get_gmail():
+    try:
         options = Options()
         options.add_argument("--headless")
         driver = webdriver.Firefox(options=options)
