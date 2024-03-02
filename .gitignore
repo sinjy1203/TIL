@@ -5,6 +5,7 @@
 FSDL_2022/cifar-10-batches-py
 FSDL_2022/wandb
 FSDL_2022/wandb-lightning
+LargeLanguageModel/wandb
 
 *.sqlite3
 *.pyc
